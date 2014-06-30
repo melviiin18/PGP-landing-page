@@ -1,0 +1,36 @@
+
+.discoverdata {
+	color: #d11141;
+}
+.usedata {
+	color: #00b159;
+}
+
+.sharedata{
+	 color: #00aedb; 	
+}
+
+.silver{
+	color: #D1D0CE;
+}
+
+
+
+
+.Manual{
+	color: #00aedb;
+}
+.desc-list {
+	list-style-type: disc;
+	padding-left: 40px;
+	list-style-position: inside;
+	color: #666;
+}
+
+.pgp-name {
+	color: red; !important;
+}
+
+.margin { margin-left: 30px; 
+}
+-->

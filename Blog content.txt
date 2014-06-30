@@ -1,0 +1,41 @@
+id="blog" class="section">
+	<div class="row">
+		<div class="content-title-wrap1">
+			<h3>Downloads<span></h3>
+		</div>
+		<div class="space60"></div>	
+		
+		<div class="twelve columns projects-wrap">
+		    
+			<p>
+			<h4> <span class="usedata"> Procedural Manual </span> </h4>
+			    <ul> 
+					<li class = "tab">Agency Node Portal</li>					
+						<ul class= "desc-list">
+							<a href = ".\downloads\How to Start & Stop Agency Node Portal Service.pdf"> <li>How to Start & Stop Agency Node Portal Service</li> </a>
+							<a href = ".\downloads\How to use Agency Node Portal Viewer.pdf"> <li>How to Use Agency Node Portal Viewer</li> </a>					
+						</ul>
+					<li class = "tab"> Map Viewer </li>					
+						<ul class= "desc-list">
+							<a href = ".\downloads\How to use Map Viewer.pdf"> <li>How to Use a Map Viewer Service</li> </a>							
+						</ul>						
+					<li class = "tab"> Map Builder and Catalog </li>					
+						<ul class= "desc-list">
+							<a href = "#"> <li>How to Use a Map Builder and Catalog</li> </a>							
+						</ul>						
+					<li class = "tab"> Map Apps </li>					
+						<ul class= "desc-list">
+							<a href = ""> <li>How to Use Tourism</li> </a>							
+							<a href = ""> <li>How to Use Disaster Risk and Reduction Management Map App</li> </a>							
+							<a href = ".\downloads\How to use the Basic Services Map App.pdf"> <li>How to Use Basic Services Map App</li> </a>							
+						</ul>						
+			</p>
+			
+			<h4> <a href = ".\downloads\Data Sharing Agreement v2b.docx">Data Sharing Agreement </a> </h4> 
+			
+			<h4> <a href = ".\downloads\Inventory Form - Fundamental Geospatial Datasets.docx">Inventory of Fundamental Geospatial Datasets</h4> 
+			
+		</div>
+			
+		</div>
+		

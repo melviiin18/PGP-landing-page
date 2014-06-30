@@ -1,0 +1,178 @@
+<div id="portfolio" class="section">
+	<div class="row">
+		<div class="content-title-wrap1">
+			<h3>Data <span>layers</span></h3>
+			<p>Latest data appears below. For complete list visit the <a href="#">map viewer</a>.</p>
+		</div>
+		<div class="space50"></div>
+
+		<div class="twelve columns">
+			<!-- Category Filter -->
+			<div class="filter-wrap">
+				<ul class="filter"> 
+					<li class="all currents"><a href="#">All</a></li> 
+					<li class="logos"><a href="#">Agency data</a></li> 
+					<li class="webdesign"><a href="#">Crowd-sourced data</a></li> 
+					<!--
+					<li class="prints"><a href="">Prints</a></li> 
+					<li class="character"><a href="">Character design</a></li> 
+					-->
+				</ul> 
+			</div>
+
+			<div class="clear"></div>
+
+			<!-- Portfolio Items -->
+			<ul class="portfolio" style="height: 663px;">
+			
+				<li class="three columns" data-id="id-1" data-type="logos">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Schools</span>
+									<span class="overlay-tag">Point</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-2" data-type="character">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Geodetic control points</span>
+									<span class="overlay-tag">Point</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-3" data-type="webdesign">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Mining area</span>
+									<span class="overlay-tag">Polygon</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-4" data-type="logos">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Metro Manila ortho-Image</span>
+									<span class="overlay-tag">Raster</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-5" data-type="prints">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Prints</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-6" data-type="webdesign">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Web design</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-7" data-type="prints">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Prints</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-8" data-type="logos">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Logo</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns " data-id="id-10" data-type="webdesign">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Web design</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-7" data-type="prints">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Prints</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns" data-id="id-8" data-type="logos">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Logo</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="three columns " data-id="id-10" data-type="webdesign">
+					<a href="#" data-reveal-id="folio1">
+						<div class="portfolio_thumb"><img src="http://placehold.it/200x200" alt="">
+							<span class="portfolio-inner">
+								<span class="zoom-inner">
+									<span class="overlay title">Lorem ipsum dolor</span>
+									<span class="overlay-tag">Web design</span>
+								</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				
+				
+				
+			</ul>
+		</div>
+	</div>
+</div>

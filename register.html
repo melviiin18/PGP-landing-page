@@ -1,0 +1,73 @@
+<html>
+	<head>
+	</head>
+	
+	<body>
+		
+		<div id="contact" class="section">
+			<div class="row">
+				<div class="twelve columns contact-wrap">
+			
+				<div class="content-title-wrap1">
+					<h3>Contact <span>us</span></h3>
+				</div>
+			
+				<div class="space40"></div>
+			
+					<div class="six columns">
+						<form id="contactForm" action="http://counterpart.x10.mx/html/carnival/php/contact.php" method="post" class="positioned">
+							<ul>
+								<li>
+									<!-- Prefix label -->
+									<div class="row collapse">
+										<div class="two mobile-one columns">
+											<span class="prefix"><span class="contact-ico">+</span></span>
+										</div>
+										<div class="ten mobile-three columns">
+											<input type="text" name="senderName" id="senderName" placeholder="Your full name" required="required" maxlength="40">
+										</div>
+									</div>
+								</li>
+								<li>
+									<!-- Prefix label -->
+									<div class="row collapse">
+										<div class="two mobile-one columns">
+											<span class="prefix"><span class="contact-ico">%</span></span>
+										</div>
+										<div class="ten mobile-three columns">
+											<input type="email" name="senderEmail" id="senderEmail" placeholder="Type your valid email address" required="required" maxlength="50">
+										</div>
+									</div>
+								</li>
+								<li>
+									<textarea name="message" id="message" placeholder="Your message" required="required" cols="60" rows="10" maxlength="10000"></textarea>
+								</li>
+							</ul>
+			
+							<div id="formButtons">
+								<input type="submit" id="sendMessage" name="sendMessage" value="Send it">
+							</div>
+						</form>
+						<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+						<div id="successMessage" class="successmessage"><p><span class="success-ico">W</span> Thanks for sending your message! We'll get back to you shortly.</p></div>
+						<div id="failureMessage" class="errormessage"><p><span class="error-ico">[</span> There was a problem sending your message. Please try again.</p></div>
+						<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+					</div>
+
+					<div class="six columns	">
+						<div class="contact-info">
+							<p>For questions or comments, please send us a message using the form on the left. You can also contact us using the following channel:</p>
+							<span class="ico">$</span><div class="address">NAMRIA Building, Lawton Avenue, Fort Bonifacio, Taguig City, Philippines 1634</div>
+							<span class="ico">%</span><div class="email">geoportal@namria.gov.ph</div>
+							<span class="ico">!</span><div class="phoneno">+63 884 2853</div>
+							<span class="ico">&lt;</span><div class="faxno">+63 884 2853</div>
+							<span class="ico">&gt;</span><div class="url">http://www.namria.gov.ph</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
