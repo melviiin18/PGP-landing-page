@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0040)http://counterpart.x10.mx/html/-->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script type="text/javascript">
+		String.prototype.splice = function( idx, rem, s ) {
+			return (this.slice(0,idx) + s + this.slice(idx + Math.abs(rem)));
+		};
+		var url = unescape(document.URL);
+		//url = url.toLowerCase();
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		if(url.indexOf("?p=") > -1 || url.indexOf("?P=") > -1){
+			url = url.splice(url.indexOf('?p='),0,'viewer');
+			window.location = url;
+		}
+	</script>
+	
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<meta name="viewport" content="width=device-width">
 	
@@ -39,51 +52,13 @@
 	<script type="text/javascript" src="./js/contact.js"></script>
 	<script type="text/javascript" src="./js/custom.js"></script>
 
-	<!-- jQuery Files -->
-	<script type="text/javascript" src="./js/jquery.scrollTo.js"></script>
-	<script type="text/javascript" src="./js/jquery.nav.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails"		  
-			});
-
-			$('.navigation').onePageNav();
-		  
-			var _ues = {
-				host:'geoportalph.userecho.com',
-				forum:'30433',
-				lang:'en',
-				tab_corner_radius:5,
-				tab_font_size:20,
-				tab_image_hash:'ZmVlZGJhY2s%3D',
-				tab_chat_hash:'Y2hhdA%3D%3D',
-				tab_alignment:'right',
-				tab_text_color:'#FFFFFF',
-				tab_text_shadow_color:'#00000055',
-				tab_bg_color:'#57A957',
-				tab_hover_color:'#F45C5C'
-			};
-
-			(function() {
-				var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
-				_ue.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
-			})();
-			
-			/*
-			$('#notice-alert').reveal({
-				animation: 'fadeAndPop',                   //fade, fadeAndPop, none
-				animationspeed: 300,                       //how fast animtions are
-				closeonbackgroundclick: true,              //if you click background will modal close?
-				dismissmodalclass: 'close-reveal-modal'    //the class of a button or element that will close an open modal
-			});
-			*/
-		  
-		});
-
+	$(document).ready(function(){
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		    controlNav: "thumbnails"
+		  });
+	});
 	</script>
 
 <!--[if IE 8]>
@@ -97,7 +72,6 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 </head>
 <body>
 
-<!-- Header menu -->
 <div class="header">
 	<div class="row">
 		<div class="twelve columns">
@@ -107,6 +81,10 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 				<li class=""><a href="#works">Modules</a></li>
 				<li class=""><a href="#portfolio">Agency Node Portal</a></li>
 				<li class=""><a href="#testimonials">Partner Agencies</a></li>
+				<!--
+				<li class=""><a href="#about">About</a></li>				
+				<li class=""><a href="#milestones">Milestones</a></li>				
+				-->
 				<li class=""><a href="#blog">Downloads</a></li>
 				<li class=""><a href="#contact">Contact us</a></li>
 			</ul>
@@ -122,6 +100,9 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 		<div class="row">		
 			<div class="twelve columns logo-wrap">
 			     <img src=".\img\pgp.png">
+				<!--
+				<h1></h1>
+				 <h5>One Nation. One Map</h5>  -->
 			</div>		
 		</div>
 	</div>
@@ -174,6 +155,10 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 
 <div class="clear"></div>
 
+
+
+<div class="clear"></div>
+
 <!-- Works content Start -->
 <div id="works" class="section">
 	<div class="row">
@@ -186,6 +171,9 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 		<div class="twelve columns projects-wrap">
 			<div class="five columns">
 				<img src="./img/MapViewer.png" alt="">
+				<!--
+				<div class="project-tag">Mobile App</div>
+				-->
 			</div>
 
 			<div class="seven columns">
@@ -195,6 +183,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 				</p>			
 				<a class="works-more" href="http://www.geoportal.gov.ph/viewer" target="_blank">Launch app</a> 
 				<div class="space40"></div>
+				<!-- <a class="works-more" href="register.html">Launch app</a> -->
 			</div>			
 		</div>
 		<!-- Work1 content-->
@@ -205,6 +194,9 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 		<div class="twelve columns projects-wrap">				    
 			<div class="five columns">
 				<img src="./img/MapCatalog.png" alt="">
+				<!--
+				<div class="project-tag">Web design</div>
+				-->
 			</div>
 			
 			<div class="seven columns">
@@ -219,11 +211,15 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 		<!-- Work2 content-->
 
 		<div class="clear"></div>
+		<div class="space70"></div>
 
 		<!-- Work3 content-->
 		<div class="twelve columns projects-wrap">
 			<div class="five columns">
 				<img src="./img/MapBuilder.png" alt="">
+				<!--
+				<div class="project-tag">Android</div>
+				-->
 			</div>
 			<div class="seven columns">
 				<h3>Map Builder</h3>
@@ -237,387 +233,210 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 		</div>
 		<!-- Work3 content-->
 			
-		<div class="clear"></div>
-			
 		<!-- Work4 content-->
 		<div class="twelve columns projects-wrap">
-			<div class="five columns">
-				<img src="./img/MapApps.png" alt="">
-			</div>	
-			<div class="seven columns">			
-					<h3>Map Apps</h3>
-					<p> A collection of customized web mapping applications</p>				
+		
+				<div class="five columns">
+					<img src="./img/MapApps.png" alt="">
 					<!--
-					<div class="space40"></div>				
-					<a class="works-more" href="#" data-reveal-id="folio0">Tourism</a>
-					<a class="works-more" href="#" data-reveal-id="folio0">Disaster Risk Reduction and Management</a>
-					<a class="works-more" href="http://v1.geoportal.gov.ph/basicservices/map.html" target="_blank">Basic Services Provision</a> 						 				
+					<div class="project-tag">Web design</div>
 					-->
-					
-					
-					<div class="three columns">
-						<p class="main"> Tourism </P>				
-						<p class = "main"> <a class="works-more" href="apps/tourism" target="_blank"> Launch App</a> </p>
-					</div>
-					
-					<div class="six columns">
-						<p class = "main">Disaster Risk Reduction and Management</p>
-						<p class = "main"> <a class="works-more" href="apps/drrm" target="_blank">Launch App</a> </p>
-					</div>
-					
-					<div class="three columns">
-						<p class = "main"> Basic Services Provision </p>
-						<p class = "main"> <a class="works-more" href="http://v1.geoportal.gov.ph/basicservices/map.html" target="_blank">Launch App</a> </p> 						 				
-					</div>
-					
-					<div class="three columns">
-						<p class = "main"> TD Plotter </p>
-						<p class = "main"> <a class="works-more" href="apps/td-plotter" target="_blank">Launch App</a> </p> 						 				
-					</div>
-					
-					<div class="six columns">
-						<p class = "main"> Routing </p>
-						<p class = "main"> <a class="works-more" href="apps/routing" target="_blank">Launch App</a> </p> 						 				
-					</div>
-					
-					<div class="three columns">
-						<p class = "main"> Map Composer </p>
-						<p class = "main"> <a class="works-more" href="apps/composer" target="_blank">Launch App</a> </p> 						 				
-					</div>
-					
-					<div class="space40"></div>	
-				</div>			
+				</div>
+				
+			<div class="seven columns">			
+				<h3>Map Apps</h3>
+				<p> A collection of customized web mapping applications</p>				
+				<!--
+				<div class="space40"></div>				
+				<a class="works-more" href="#" data-reveal-id="folio0">Tourism</a>
+				<a class="works-more" href="#" data-reveal-id="folio0">Disaster Risk Reduction and Management</a>
+				<a class="works-more" href="http://v1.geoportal.gov.ph/basicservices/map.html" target="_blank">Basic Services Provision</a> 						 				
+				-->
+				<div>
+				
+				<div class="three columns">
+					<p class="main"> Tourism </P>				
+					<p class = "main"> <a class="works-more" href="#" data-reveal-id="folio0"> Launch App</a> </p>
+				</div>
+				
+				<div class="six columns">
+					<p class = "main">Disaster Risk Reduction and Management</p>
+					<p class = "main"> <a class="works-more" href="#" data-reveal-id="folio0">Launch App</a> </p>
+				</div>
+				
+				<div class="three columns">
+					<p class = "main"> Basic Services Provision </p>
+					<p class = "main"> <a class="works-more" href="http://v1.geoportal.gov.ph/basicservices/map.html" target="_blank">Launch App</a> </p> 						 				
+				</div>
+				<div class="space40"></div>	
+			</div>			
 		</div>
 		<!-- Work4 content-->		
 	</div>
 </div> 
+
+<div class="space40"></div>	
 <!-- Works content End -->
 
 <div class="clear"></div>
 
-<!--Portfolio content start-->
+<!--portfolio  content start-->
 <div id="portfolio" class="section">
 	<div class="row">
 		<div class="content-title-wrap1">
 			<h3>Agency Node Portal</h3>
-		</div>
+		</div>		
+		<div class="space60"></div>	
 		
 		<div class="twelve columns service-wrap">	
-			<div class="five columns">
+           <div class="five columns">
 		    	<img src=".\img\node.png"> 					
 				<div class="space40"></div>
 		    </div>
 			
 			<div class="six columns">			
-				<p>
-				<span class="silver"><span class="discoverdata">AGENCY NODE PORTAL</span></span>
-				<span class="silver"> is a facility that will help the agency manage the buildup, hosting, and sharing of its own geospatial data to the Philippine Geoportal.</span>
-				</p>							
+				<p><span class="silver"> <span class="discoverdata">AGENCY NODE PORTAL</span> <span class="silver"> is a facility that will help the agency manage the buildup, hosting, and sharing of its own geospatial data to the Philippine Geoportal.</P>							
 		    </div>
 			
 			<div class="fifteen columns">
-				<a class="download-button" href=".\downloads\node portal.zip" target="_blank">Download</a> 				
-				<a class="download-button" href="https://github.com/geoportalph/agency-node-portal" target="_blank">Fork at Github</a> 					
-			</div>	
+			<a class="download-button" href=".\downloads\node portal.zip" target="_blank">Download</a> 				
+			<a class="download-button" href="https://github.com/geoportalph/agency-node-portal" target="_blank">Fork at Github</a> 					
+			</div>
+					
+				
+			
+					
+			
 		</div>		
-	</div>
-</div>
-<!--Portfolio content end-->
+	</div>		
+<!--Blog content end-->
 
 <!-- Testimonial content Start -->
 <div id="testimonials" class="section">	
 	<div class="row">		
-		<div class="space60"></div>
+	<div class="space60"></div>
 		<div class="content-title-wrap">
 			<h3>Partner Agencies</h3>
 		</div>
 		<div class="space30"></div>
-		 
-		<div class="twelve columns">				
+		
+		 <div class="eleven columns">				
 			<div class="two columns services-content">
-				<a href="http://www.ched.gov.ph/" target="_blank"> 
+			    <a href="http://www.ched.gov.ph/" target="_blank"> 
 				<img src=".\img\ched.jpg"> 
-				<p class = "main">Commission on Higher Education</p>
+				<p class = "main"> Commission on Higher Education (CHED) </p>
 				</a>  				
 			</div>	
-								
+		 						
 			<div class="two columns services-content">
-				<a href="http://www.cict.gov.ph/" target="_blank"> 
+			    <a href="http://www.cict.gov.ph/" target="_blank"> 
 				<img src=".\img\cict.jpg"> 
-				<p class = "main">Commission on Information and Communication Technology</p>
+				<p class = "main"> Commission on Information and Communication Technology (CICT)</p>
 				</a>  				
 			</div>	
 				
 			<div class="two columns services-content">
-				<a href="http://www.da.gov.ph/" target="_blank"> 
+			    <a href="http://www.da.gov.ph/" target="_blank"> 
 				<img src=".\img\da.jpg"> 
-				<p class = "main">Department of Agriculture</p>
+				<p class = "main">Department of Agriculture (DA)</p>
 				</a>  				
 			</div>	
 				
 			<div class="two columns services-content">
-				<a href="http://www.denr.gov.ph/" target="_blank"> 
+			    <a href="http://www.denr.gov.ph/" target="_blank"> 
 				<img src=".\img\denr.jpg"> 
-				<p class = "main">Department of Environment and Natural Resources</p>
+				<p class = "main">Department of Environment and Natural Resources (DENR)</p>
 				</a>  				
 			</div>	
 				
 			<div class="two columns services-content">
-				<a href="http://www.dotc.gov.ph/" target="_blank"> 
+			    <a href="http://www.dotc.gov.ph/" target="_blank"> 
 				<img src=".\img\dotc.jpg"> 
-				<p class = "main">Department of Transportation and Communication</p>
+				<p class = "main">Department of Transportation and Communication (DOTC)</p>
 				</a>  				
 			</div>	
 				
 			<div class="two columns services-content">
-				<a href="http://www.dilg.gov.ph/" target="_blank"> 
+			    <a href="http://www.dilg.gov.ph/" target="_blank"> 
 				<img src=".\img\dilg.jpg"> 
-				<p class = "main">Department of Interior and Local Government</p>
+				<p class = "main">Department of Interior and Local Government (DILG)</p>
 				</a>  				
 			</div>		
 						
 			<div class="two columns services-content">
-				<a href="http://www.dnd.gov.ph/" target="_blank"> 
+			    <a href="http://www.dnd.gov.ph/" target="_blank"> 
 				<img src=".\img\dnd.jpg"> 
-				<p class = "main">Department of National Defense</p>
+				<p class = "main">Department of National Defense (DND)</p>
 				</a>  				
 			</div>		
 		</div>		
 		
 		  
-		<div class="twelve columns">			    		
-			<div class="five columns services-content">
-				<a href="http://www.deped.gov.ph/" target="_blank"> 
+		<div class="eleven columns">	
+		    <div class="space30"></div> 
+			
+			  <div class="five columns services-content">
+			    <a href="http://www.deped.gov.ph/" target="_blank"> 
 				<img src=".\img\deped.jpg"> 
-				<p class = "main">Department of Education</p>
+				<p class = "main">Department of Education (DEPED)</p>
 				</a>  				
 			</div>	
 			
 			<div class="two columns services-content">
-				<a href="http://www.doh.gov.ph/" target="_blank"> 
+			    <a href="http://www.doh.gov.ph/" target="_blank"> 
 				<img src=".\img\doh.jpg"> 
-				<p class = "main">Department of Health</p>
+				<p class = "main">Department of Health (DOH)</p>
 				</a>  				
 			</div>	
 		 
 			<div class="two columns services-content">
-				<a href="http://www.dost.gov.ph/" target="_blank"> 
+			    <a href="http://www.dost.gov.ph/" target="_blank"> 
 				<img src=".\img\dost.jpg"> 
-				<p class = "main">Department of Science and Technology</p>
+				<p class = "main">Department of Science and Technology (DOST)</p>
 				</a>  				
 			</div>	
-											
+			
+			
+									
 			<div class="two columns services-content">
-				<a href="http://www.dpwh.gov.ph/" target="_blank"> 
+			    <a href="http://www.dpwh.gov.ph/" target="_blank"> 
 				<img src=".\img\dpwh.jpg"> 
-				<p class = "main">Department of Public Works and Highways</p>
+				<p class = "main">Department of Public Works and Highways (DPWH)</p>
 				</a>  				
 			</div>	
 				
 			<div class="two columns services-content">
-				<a href="http://www.mmda.gov.ph/" target="_blank"> 
+			    <a href="http://www.mmda.gov.ph/" target="_blank"> 
 				<img src=".\img\mmda.jpg"> 
-				<p class = "main">Metropolitan Manila Development Authority</p>
-				</a>  				
+				<p class = "main">Metropolitan Manila Development Authority (MMDA)</p>
+			    </a>  				
 			</div>			
 			
 			 <div class="five columns services-content">
 				<a href="http://www.ncc.gov.ph/" target="_blank"> 
 				<img src=".\img\ncc.jpg"> 
-				<p class = "main">National Computer Center</p>
+				<p class = "main">National Computer Center (NCC)</p>
 				</a>  				
-			</div>					 
-		</div>		
-		 
-		<div class="twelve columns">		
-			<div class="two columns services-content">
-				<a href="http://www.afp.mil.ph/" target="_blank"> 
-				<img src=".\img\AFP.jpg"> 
-				<p class = "main">Armed Forces of the Philippines</p>
-				</a>  				
-			</div>		
+			</div>			
 			
-			<div class="two columns services-content">
-				<a href="http://caap.gov.ph/" target="_blank"> 
-				<img src=".\img\caap.jpg"> 
-				<p class = "main">Civil Aviation Authority of the Philippines</p>
-				</a>  				
-			</div>		
-			
-			<div class="two columns services-content">
-				<a href="http://climate.gov.ph/" target="_blank"> 
-				<img src=".\img\cc.jpg"> 
-				<p class = "main">Climate Change Commission</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://cfo.gov.ph/" target="_blank"> 
-				<img src=".\img\cfo.jpg"> 
-				<p class = "main">Commission on Filipino Overseas</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://doe.gov.ph/" target="_blank"> 
-				<img src=".\img\doe.jpg"> 
-				<p class = "main">Department of Energy</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://dole.gov.ph/" target="_blank"> 
-				<img src=".\img\dole.jpg"> 
-				<p class = "main">Department of Labor and Employment</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://tourism.gov.ph/" target="_blank"> 
-				<img src=".\img\tourism.jpg"> 
-				<p class = "main">Department of Tourism</p>
-				</a>  				
-			</div>				
-			
-		</div>		
-
-		<div class="twelve columns">			 
-			<div class="two columns services-content">
-				<a href="http://www.dswd.gov.ph/" target="_blank"> 
-				<img src=".\img\dswd.jpg"> 
-				<p class = "main">Department of Social Welfare and Development</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://www.dti.gov.ph/" target="_blank"> 
-				<img src=".\img\dti.jpg"> 
-				<p class = "main">Department of Trade and Industry</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://www.marina.gov.ph/" target="_blank"> 
-				<img src=".\img\marina.jpg"> 
-				<p class = "main">Maritime Industry Authority</p>
-				</a>  				
-			</div>	
-			
-			<div class="two columns services-content">
-				<a href="http://www.napc.gov.ph/" target="_blank"> 
-				<img src=".\img\napc.jpg"> 
-				<p class = "main">National Anti-Poverty Commission</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.nea.gov.ph/" target="_blank"> 
-				<img src=".\img\nea.jpg"> 
-				<p class = "main">National Electrification Administration</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.nnc.gov.ph/" target="_blank"> 
-				<img src=".\img\nnc.jpg"> 
-				<p class = "main">National Nutrition Council</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.census.gov.ph/" target="_blank"> 
-				<img src=".\img\nso.jpg"> 
-				<p class = "main">National Statistics Office</p>
-				</a>  				
-			</div>
-			
-		</div>		
-		
-		<div class="twelve columns">		
-			<div class="two columns services-content">
-				<a href="http://www.ntc.gov.ph/" target="_blank"> 
-				<img src=".\img\ntc.jpg"> 
-				<p class = "main">National Telecommunications Commission</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.pcup.gov.ph/" target="_blank"> 
-				<img src=".\img\pcup.jpg"> 
-				<p class = "main">Presidential Commission on the Urban Poor</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.pms.gov.ph/" target="_blank"> 
-				<img src=".\img\pms.jpg"> 
-				<p class = "main">Presidential Management Staff</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.pnp.gov.ph/" target="_blank"> 
-				<img src=".\img\pnp.jpg"> 
-				<p class = "main">Philippine National Police</p>
-				</a>  				
-			</div>
-			
-			<div class="two columns services-content">
-				<a href="http://www.pnr.gov.ph/" target="_blank"> 
-				<img src=".\img\pnr.jpg"> 
-				<p class = "main">Philippine National Railways</p>
-				</a>  				
-			</div>
-			<div class="two columns services-content" align="center">
-				<a href="http://www.tesda.gov.ph/" target="_blank"> 
-				<img src=".\img\tesda.jpg"> 
-				<p class = "main">Technical Education and Skills Development Authority </p>
-				</a>  				
-			</div>
-			<div class="two columns services-content">
-				<a href="http://www.pea.gov.ph/" target="_blank"> 
-				<img src=".\img\pea.jpg"> 
-				<p class = "main">Philippine Reclamation Authority</p>
-				</a>  				
-			</div>		
-			
-		</div>
-		
-		<div class="twelve columns">			
-				<div class="five columns services-content">
-					<a href="http://www.ppa.com.ph/" target="_blank"> 
-					<img src=".\img\ppa.jpg"> 
-					<p class = "main">Philippine Ports Authority</p>
-					</a>  				
-				</div>				
-				<div class="two columns services-content">
-					<a href="http://www.bfp.gov.ph/" target="_blank"> 
-					<img src=".\img\bfp.jpg"> 
-					<p class = "main">Bureau of Fire Protection</p>
-					</a>  				
-				</div>	
-				<div class="two columns services-content">
-					<a href="http://www.bir.gov.ph/" target="_blank"> 
-					<img src=".\img\bir.jpg"> 
-					<p class = "main">Bureau of Internal Revenue</p>
-					</a>  				
-				</div>	
-				<div class="two columns services-content">			   				
-				</div>	
+			 <div class="two columns services-content">
 				
-		</div>
+			</div>			
+        </div>		
+          		
 		
 	</div>
+	
 </div>
 <!-- Testimonial content end-->
-
 
 <!--Blog content start-->
 <div id="blog" class="section">
 	<div class="row">
 		<div class="content-title-wrap1">
-			<h3>Downloads</h3>
+			<h3>Downloads<span></h3>
 		</div>
+		<div class="space60"></div>	
 		
 		<div class="twelve columns projects-wrap">
 		    
@@ -639,10 +458,8 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 						</ul>						
 					<li class = "margin"> <span class = "silver"> Map Apps </span> </li>					
 						<ul class= "desc-list">
-							<a href = ".\downloads\How to use Tourism Map App.pdf" target="_blank"> <li>How to Use Tourism Map App</li> </a>		
-						    <a href = ".\downloads\How to use DRRM Map App.pdf" target="_blank"> <li>How to Use Disaster Risk and Reduction Management Map App</li></a>
-							<a href = ".\downloads\How to use TD Plotter Map App.pdf" target="_blank"> <li>How to Use Technical Description Plotter Map App</li></a>
-							<a href = ".\downloads\How to use Routing Map App.pdf" target="_blank"> <li>How to Use Routing Map App</li> </a>
+							<li>How to Use Tourism Map App</li> 							
+							<li>How to Use Disaster Risk and Reduction Management Map App</li> 							
 							<a href = ".\downloads\How to use the Basic Services Map App.pdf" target="_blank"> <li>How to Use Basic Services Map App</li> </a>							
 						</ul>			
 				</ul>
@@ -654,15 +471,9 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 			
 		</div>
 			
-	</div>
-</div>	
+		</div>
+		
 <!--Blog content end-->
-
-
-<div class="space40"></div>	
-<!-- Works content End -->
-
-<div class="clear"></div>
 
 <!-- Contact content start -->
 <div id="contact" class="section">
@@ -674,11 +485,11 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 	
 		<div class="space40"></div>
 	
-			<!--
 			<div class="six columns">
 				<form id="contactForm" action="http://counterpart.x10.mx/html/carnival/php/contact.php" method="post" class="positioned">
 					<ul>
 						<li>
+							<!-- Prefix label -->
 							<div class="row collapse">
 								<div class="two mobile-one columns">
 									<span class="prefix"><span class="contact-ico">+</span></span>
@@ -689,6 +500,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 							</div>
 						</li>
 						<li>
+							<!-- Prefix label -->
 							<div class="row collapse">
 								<div class="two mobile-one columns">
 									<span class="prefix"><span class="contact-ico">%</span></span>
@@ -714,8 +526,6 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 				<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
 			</div>
 
-			-->
-			
 			<div class="six columns	">
 				<div class="contact-info">
 					<p>For questions or comments, please send us a message using the form on the left. You can also contact us using the following channel:</p>
@@ -723,7 +533,7 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 					<span class="ico">%</span><div class="email">geoportal@namria.gov.ph</div>
 					<span class="ico">!</span><div class="phoneno">+63 884 2853</div>
 					<span class="ico">&lt;</span><div class="faxno">+63 884 2853</div>
-					<span class="ico">&gt;</span><div class="url"><a href ="http://www.namria.gov.ph">http://www.namria.gov.ph </a></div>
+					<span class="ico">&gt;</span><div class="url">http://www.namria.gov.ph</div>
 				</div>
 			</div>
 		</div>
@@ -750,20 +560,22 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 </div>
 <!-- Footer copyright end -->
 
-<!-- Modal Section - Portfolio -->
+<!-- Modal Section - Default -->
+<div id="folio0" class="reveal-modal small" style="top: 100px; opacity: 1; visibility: hidden; display: none;">
 <div class="portfolio-content">
-	<div id="notice-alert" class="reveal-modal small">
-		<h2>Notice!</h2>
-
-		<p>Typhoon Hagupit/Ruby 2014 data available <a target="_blank" href="http://geoportal.gov.ph/viewer/?p=%7B%22g%22%3A%5B13919603.83423%2C1465799.3471801%2C1%2C%22Philippine%20Geoportal%20Basemap%22%5D%2C%22l%22%3A%5B%5B%22Typhoon%20Ruby%20Forecast%20Path%20As%20of%20December%204%2C%202014%22%2C%22geoportal%3Aruby_path_forecast_line_12042014%22%2C1%2C%22ruby_line%22%2C0%2Cnull%5D%2C%5B%22Typhoon%20Ruby%20Forecast%20Position%20As%20of%20December%204%2C%202014%22%2C%22geoportal%3Aruby_path_forecast_points_12042014%22%2C1%2C%22ruby_points%22%2C0%2Cnull%5D%5D%7D">here</a>.</p>
-		
-		<a class="close-reveal-modal"><img src="img/close.png" alt=""/></a>
+	<h3>Coming Soon!</h3>
+	<div class="space30"></div>
+	<div class="row">
+		<h4>This application is still under development.</h4>
 	</div>
 </div>
+<a class="close-reveal-modal"><img src="./img/close.png" alt=""></a>
+</div><div class="reveal-modal-bg" style="opacity: 0.8; display: none; cursor: pointer;"></div>
+
 
 
 <!-- Modal Section - Portfolio -->
-<div id="folio1" class="reveal-modal xlarge" style="xtop: 100px; opacity: 1; visibility: hidden; display: none;">
+<div id="folio1" class="reveal-modal xlarge" style="top: 100px; opacity: 1; visibility: hidden; display: none;">
 <div class="portfolio-content">
 	<h3>Some Project Title Here</h3>
 	<div class="portfolio-fullimg">
@@ -790,8 +602,68 @@ span.portfolio-inner {background:url(images/overlay-ico.png) no-repeat center ce
 <a class="close-reveal-modal"><img src="./img/close.png" alt=""></a>
 </div><div class="reveal-modal-bg" style="opacity: 0.8; display: none; cursor: pointer;"></div>
 
+<!-- Modal Section - Blog -->
+<div id="blogpost1" class="reveal-modal xlarge">
+<div class="portfolio-content">
+	<h3>Some Blog Title Here</h3>
+	<div class="portfolio-fullimg">
+		<img src="./img/layer.jpg" alt="">
+	</div>
+	<div class="space30"></div>
 
+	<div class="row">
+		<div class="eight columns">
+			<p>Suspendisse sit amet felis massa. Morbi vulputate sagittis est sit amet pellentesque.Donec a tincidunt ligula. Nullam ac neque vel massa imperdiet tristique. Aenean in elementum eros. Vivamus et elit dolor, at eleifend nunc. Vestibulum sodales dignissim libero varius pharetra. Aliquam imperdiet turpis non magna adipiscing malesuada. Fusce consectetur euismod nibh, eu dictum velit dictum sed. Ut vestibulum tincidunt enim eu lobortis. Vivamus malesuada blandit magna, id fermentum risus dignissim sed. In mollis arcu ac eros dignissim consequat. Sed eget nibh nec neque hendrerit tristique nec ac diam. Aenean ac urna felis, ac dictum metus. In fringilla pellentesque enim et dapibus. Mauris in felis sem, in vestibulum libero. Aenean non mauris ut ante convallis posuere.</p>
+		</div>
+
+		<div class="four columns">
+			<ul class="portfolio-meta">
+				<li><span>Date:</span><div class="meta-list">09th Feb 2013</div></li>
+				<li><span>Category:</span><div class="meta-list">News</div></li>
+				<li><span>Tags: </span><div class="meta-list"><a href="#">webdesign</a> / <a href="#">Logo</a><br></div></li>
+				<li><span>Author: </span><div class="meta-list"><a href="#">Dilipkumar</a></div></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<a class="close-reveal-modal"><img src="./img/close.png" alt=""></a>
+</div>
 <!-- Main wrap End -->
 
-</body>
-</html>
+<!-- jQuery Files -->
+<script type="text/javascript" src="./js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="./js/jquery.nav.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.navigation').onePageNav();
+  
+});
+</script>
+
+
+
+<script type='text/javascript'>
+
+var _ues = {
+host:'geoportalph.userecho.com',
+forum:'30433',
+lang:'en',
+tab_corner_radius:5,
+tab_font_size:20,
+tab_image_hash:'ZmVlZGJhY2s%3D',
+tab_chat_hash:'Y2hhdA%3D%3D',
+tab_alignment:'right',
+tab_text_color:'#FFFFFF',
+tab_text_shadow_color:'#00000055',
+tab_bg_color:'#57A957',
+tab_hover_color:'#F45C5C'
+};
+
+(function() {
+    var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
+    _ue.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
+  })();
+
+</script>
+</body></html>
